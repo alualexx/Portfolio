@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alemayehu Mekonen | Cyber Security Analyst</title>
+    <meta name="description" content="Alemayehu Mekonen – Cyber Security Analyst, Penetration Tester & Vulnerability Analyst. Top 4 Ethiopia on TryHackMe. EC-Council OSINT Certified. Based in Addis Ababa, Ethiopia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <div class="logo-icon">AM</div>
+            <span class="logo-text">A.Mekonen</span>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="#hero"        class="nav-link active" data-section="hero">       <span class="nav-icon">⌂</span><span class="nav-label">Home</span></a></li>
+            <li><a href="#about"       class="nav-link"        data-section="about">      <span class="nav-icon">◉</span><span class="nav-label">About</span></a></li>
+            <li><a href="#experience"  class="nav-link"        data-section="experience"> <span class="nav-icon">⧖</span><span class="nav-label">Experience</span></a></li>
+            <li><a href="#skills"      class="nav-link"        data-section="skills">     <span class="nav-icon">⚡</span><span class="nav-label">Skills</span></a></li>
+            <li><a href="#certs"       class="nav-link"        data-section="certs">      <span class="nav-icon">★</span><span class="nav-label">Certs</span></a></li>
+            <li><a href="#projects"    class="nav-link"        data-section="projects">   <span class="nav-icon">⬡</span><span class="nav-label">Projects</span></a></li>
+            <li><a href="#contact"     class="nav-link"        data-section="contact">    <span class="nav-icon">✉</span><span class="nav-label">Contact</span></a></li>
+        </ul>
+        <div class="sidebar-status">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for Hire</span>
+        </div>
+    </nav>
+
+    <!-- Mobile Topbar -->
+    <header class="topbar">
+        <div class="topbar-logo">AM<span>.</span></div>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+    </header>
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#certs">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <main class="main-content">
+
+        <!-- ════════════════════════════════════════
+             HERO
+        ════════════════════════════════════════ -->
+        <section id="hero" class="section hero-section">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="scan-line"></span>
+                        Hello, World. I am
+                    </div>
+                    <h1 class="hero-name">Alemayehu<br><span class="accent">Mekonen</span></h1>
+                    <div class="hero-roles">
+                        <span class="role-prefix">&gt;_</span>
+                        <span class="typing-text" id="typing-role"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-desc">
+                        Securing digital frontiers from <strong>Addis Ababa, Ethiopia</strong>. 
+                        2 years at INSA · Top #4 Ethiopia on TryHackMe · EC-Council OSINT Certified · 
+                        Freelance Security Consultant for global companies.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn-primary">Initiate Contact</a>
+                        <a href="#projects" class="btn-secondary">View Operations</a>
+                    </div>
+                    <div class="hero-meta">
+                        <div class="meta-item"><span class="meta-icon">📍</span><span>Addis Ababa, Ethiopia</span></div>
+                        <div class="meta-item"><span class="meta-icon">📱</span><span>+251 949 337 089</span></div>
+                        <div class="meta-item"><span class="meta-icon">✉</span><span>alemayew1202@gmail.com</span></div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hex-avatar">
+                        <div class="hex-ring hex-ring-1"></div>
+                        <div class="hex-ring hex-ring-2"></div>
+                        <div class="hex-ring hex-ring-3"></div>
+                        <div class="hex-center">
+                            <div class="avatar-initials">AM</div>
+                        </div>
+                    </div>
+                    <div class="floating-stats">
+                        <div class="stat-bubble stat-bubble-1">
+                            <span class="stat-num">2+</span>
+                            <span class="stat-label">Years at INSA</span>
+                        </div>
+                        <div class="stat-bubble stat-bubble-2">
+                            <span class="stat-num">#4</span>
+                            <span class="stat-label">Ethiopia THM</span>
+                        </div>
+                        <div class="stat-bubble stat-bubble-3">
+                            <span class="stat-num">🏆</span>
+                            <span class="stat-label">HTB Top Learner</span>
+                        </div>
+                    </div>
+                    <!-- Platform Badges -->
+                    <div class="platform-badges">
+                        <a href="https://tryhackme.com/p/Alualex" target="_blank" class="platform-badge thm">
+                            <span class="badge-icon">🎯</span>
+                            <div>
+                                <div class="badge-platform">TryHackMe</div>
+                                <div class="badge-rank">Top #4 · Ethiopia · @Alualex</div>
+                            </div>
+                        </a>
+                        <a href="https://app.hackthebox.com" target="_blank" class="platform-badge htb">
+                            <span class="badge-icon">⬡</span>
+                            <div>
+                                <div class="badge-platform">HackTheBox</div>
+                                <div class="badge-rank">Top Learner · Active</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════
+             ABOUT
+        ════════════════════════════════════════ -->
+        <section id="about" class="section about-section">
+            <div class="section-header">
+                <span class="section-num">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card card">
+                    <div class="card-header-label">// Identity</div>
+                    <h3>Who I Am</h3>
+                    <p>I'm <strong>Alemayehu Mekonen</strong>, a results-driven Cyber Security professional based in <strong>Addis Ababa, Ethiopia</strong>. I combine an attacker's mindset with a defender's discipline to build resilient digital infrastructures.</p>
+                    <p>With hands-on experience at the <strong>Information and Network Security Administration (INSA)</strong>, I have operated at the national level defending critical Ethiopian infrastructure. Outside of my institutional work, I actively contribute to global security as a freelance consultant and bug bounty hunter.</p>
+                </div>
+                <div class="about-card card">
+                    <div class="card-header-label">// What I Do</div>
+                    <h3>Core Activities</h3>
+                    <ul class="mission-list">
+                        <li><span class="list-icon">▶</span>Conduct <strong>penetration tests</strong> on networks, web apps, and APIs for clients worldwide.</li>
+                        <li><span class="list-icon">▶</span>Hunt vulnerabilities via <strong>Bug Bounty</strong> programs on major platforms.</li>
+                        <li><span class="list-icon">▶</span>Perform deep <strong>OSINT investigations</strong> for threat intelligence gathering.</li>
+                        <li><span class="list-icon">▶</span>Deliver <strong>security consulting & training</strong> as a freelancer to multiple companies.</li>
+                        <li><span class="list-icon">▶</span>Continuously sharpen skills on <strong>TryHackMe</strong> and <strong>HackTheBox</strong> — ranked nationally.</li>
+                    </ul>
+                </div>
+                <div class="about-card card about-card-wide">
+                    <div class="card-header-label">// Toolkit</div>
+                    <h3>Preferred Tools & Technologies</h3>
+                    <div class="tool-chips">
+                        <span class="chip">Kali Linux</span><span class="chip">Burp Suite</span><span class="chip">Metasploit</span>
+                        <span class="chip">Nmap</span><span class="chip">Wireshark</span><span class="chip">Nessus</span>
+                        <span class="chip">BloodHound</span><span class="chip">Hashcat</span><span class="chip">John the Ripper</span>
+                        <span class="chip">Gobuster</span><span class="chip">SQLMap</span><span class="chip">Nikto</span>
+                        <span class="chip">Maltego</span><span class="chip">Shodan</span><span class="chip">theHarvester</span>
+                        <span class="chip">Hydra</span><span class="chip">Volatility</span><span class="chip">Autopsy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════
+             EXPERIENCE
+        ════════════════════════════════════════ -->
+        <section id="experience" class="section experience-section">
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h2 class="section-title">Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+
+                <!-- INSA -->
+                <div class="timeline-item card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <div class="timeline-org">INSA — Information and Network Security Administration</div>
+                                <h3 class="timeline-role">Cyber Security Analyst · Penetration Tester</h3>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">2 Years</span>
+                                <span class="timeline-location">📍 Addis Ababa, Ethiopia</span>
+                                <span class="timeline-type full-time">Full-Time</span>
+                            </div>
+                        </div>
+                        <p class="timeline-desc">
+                            Worked as a Cyber Security Analyst and Penetration Tester at Ethiopia's national authority for information and network security. 
+                            Responsible for protecting critical national infrastructure, conducting authorized penetration tests across government systems, 
+                            assessing vulnerabilities, and delivering remediation reports to senior stakeholders.
+                        </p>
+                        <div class="timeline-highlights">
+                            <div class="highlight-item"><span class="hi-dot"></span>Performed penetration testing on government and enterprise network infrastructure.</div>
+                            <div class="highlight-item"><span class="hi-dot"></span>Conducted vulnerability assessments and produced comprehensive risk reports.</div>
+                            <div class="highlight-item"><span class="hi-dot"></span>Contributed to national cybersecurity frameworks and incident response protocols.</div>
+                            <div class="highlight-item"><span class="hi-dot"></span>Monitored and analyzed security events across SIEM platforms.</div>
+                        </div>
+                        <div class="tags"><span>National Security</span><span>Pentest</span><span>SIEM</span><span>Incident Response</span><span>Vulnerability Assessment</span></div>
+                    </div>
+                </div>
+
+                <!-- Freelance -->
+                <div class="timeline-item card">
+                    <div class="timeline-dot dot-purple"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <div class="timeline-org">Multiple Companies — Global Clients</div>
+                                <h3 class="timeline-role">Freelance Cyber Security Consultant</h3>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Ongoing</span>
+                                <span class="timeline-location">🌍 Remote / Ethiopia</span>
+                                <span class="timeline-type freelance">Freelance</span>
+                            </div>
+                        </div>
+                        <p class="timeline-desc">
+                            Providing independent security consulting services to a wide range of companies globally. 
+                            Delivering tailored security assessments, penetration testing, OSINT investigations, and security awareness training 
+                            to help organizations identify and close critical vulnerabilities before attackers do.
+                        </p>
+                        <div class="timeline-highlights">
+                            <div class="highlight-item"><span class="hi-dot"></span>Conducted web application and network penetration tests for multiple international clients.</div>
+                            <div class="highlight-item"><span class="hi-dot"></span>Delivered OSINT investigations and threat intelligence reports for corporate clients.</div>
+                            <div class="highlight-item"><span class="hi-dot"></span>Provided security hardening recommendations and policy development consulting.</div>
+                            <div class="highlight-item"><span class="hi-dot"></span>Trained development teams on secure coding practices and vulnerability awareness.</div>
+                        </div>
+                        <div class="tags"><span>Consulting</span><span>Web App Pentest</span><span>OSINT</span><span>Security Training</span><span>Remote</span></div>
+                    </div>
+                </div>
+
+                <!-- Bug Bounty -->
+                <div class="timeline-item card">
+                    <div class="timeline-dot dot-red"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <div class="timeline-org">Bug Bounty Platforms — HackerOne, Bugcrowd & More</div>
+                                <h3 class="timeline-role">Bug Bounty Hunter</h3>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Ongoing</span>
+                                <span class="timeline-location">🌐 Global Programs</span>
+                                <span class="timeline-type bounty">Bug Bounty</span>
+                            </div>
+                        </div>
+                        <p class="timeline-desc">
+                            Actively hunting security vulnerabilities in global bug bounty programs. 
+                            Discovering and responsibly disclosing critical security flaws including SQLi, XSS, IDOR, authentication bypasses, 
+                            and logic vulnerabilities across web applications and APIs.
+                        </p>
+                        <div class="timeline-highlights">
+                            <div class="highlight-item"><span class="hi-dot"></span>Discovered and reported critical vulnerabilities in production web applications.</div>
+                            <div class="highlight-item"><span class="hi-dot"></span>Specializing in OWASP Top 10 vulnerabilities and business logic flaws.</div>
+                            <div class="highlight-item"><span class="hi-dot"></span>Recognized by multiple companies for responsible and impactful disclosures.</div>
+                        </div>
+                        <div class="tags"><span>HackerOne</span><span>Bugcrowd</span><span>OWASP Top 10</span><span>Responsible Disclosure</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════
+             SKILLS
+        ════════════════════════════════════════ -->
+        <section id="skills" class="section skills-section">
+            <div class="section-header">
+                <span class="section-num">03</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skills-bars card">
+                    <div class="card-header-label">// Proficiency Levels</div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header"><span>Penetration Testing</span><span class="skill-pct">95%</span></div>
+                        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="95"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header"><span>Vulnerability Analysis</span><span class="skill-pct">96%</span></div>
+                        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="96"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header"><span>OSINT & Threat Intelligence</span><span class="skill-pct">93%</span></div>
+                        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="93"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header"><span>Web Application Security (OWASP)</span><span class="skill-pct">92%</span></div>
+                        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="92"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header"><span>Network Security & Analysis</span><span class="skill-pct">90%</span></div>
+                        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header"><span>Malware Analysis & Forensics</span><span class="skill-pct">82%</span></div>
+                        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="82"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header"><span>Social Engineering</span><span class="skill-pct">88%</span></div>
+                        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div>
+                    </div>
+                </div>
+                <div class="skills-domains">
+                    <div class="domain-card card">
+                        <div class="domain-icon">🔴</div>
+                        <h3>Red Team</h3>
+                        <p>Offensive ops: OSINT, reconnaissance, exploitation, privilege escalation, and lateral movement against real targets.</p>
+                    </div>
+                    <div class="domain-card card">
+                        <div class="domain-icon">🔵</div>
+                        <h3>Blue Team</h3>
+                        <p>Defensive security: SIEM monitoring, log analysis, threat hunting, and incident response at national scale (INSA).</p>
+                    </div>
+                    <div class="domain-card card">
+                        <div class="domain-icon">🌐</div>
+                        <h3>Web Security</h3>
+                        <p>OWASP Top 10, API flaws, authentication bypasses, and logic vulnerabilities discovered through Bug Bounty programs.</p>
+                    </div>
+                    <div class="domain-card card">
+                        <div class="domain-icon">🔍</div>
+                        <h3>OSINT</h3>
+                        <p>EC-Council certified. Deep open-source intelligence gathering using Maltego, Shodan, theHarvester, and custom workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════
+             CERTIFICATIONS & RANKINGS
+        ════════════════════════════════════════ -->
+        <section id="certs" class="section certs-section">
+            <div class="section-header">
+                <span class="section-num">04</span>
+                <h2 class="section-title">Certifications & Rankings</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="certs-grid">
+
+                <!-- EC-Council OSINT -->
+                <div class="cert-card card">
+                    <div class="cert-badge ec-council">
+                        <span class="cert-badge-icon">🛡</span>
+                    </div>
+                    <div class="cert-body">
+                        <div class="cert-issuer">EC-Council</div>
+                        <h3 class="cert-name">OSINT Certificate</h3>
+                        <p class="cert-desc">Certified in Open Source Intelligence methodology by EC-Council — covering advanced OSINT techniques for cyber investigations, threat intelligence, and digital footprinting.</p>
+                        <span class="cert-status verified">✓ Verified</span>
+                    </div>
+                </div>
+
+                <!-- TryHackMe -->
+                <div class="cert-card card">
+                    <div class="cert-badge thm-badge">
+                        <span class="cert-badge-icon">🎯</span>
+                    </div>
+                    <div class="cert-body">
+                        <div class="cert-issuer">TryHackMe</div>
+                        <h3 class="cert-name">Top #4 in Ethiopia</h3>
+                        <p class="cert-desc">Ranked <strong>Top #4 Nationally in Ethiopia</strong> on TryHackMe — a global cybersecurity training platform. Profile: <a href="https://tryhackme.com/p/Alualex" target="_blank" class="inline-link">@Alualex</a>. Active in CTFs, rooms, and challenges across offensive and defensive security paths.</p>
+                        <span class="cert-status national-rank">🇪🇹 National Rank #4</span>
+                    </div>
+                </div>
+
+                <!-- HackTheBox -->
+                <div class="cert-card card">
+                    <div class="cert-badge htb-badge">
+                        <span class="cert-badge-icon">⬡</span>
+                    </div>
+                    <div class="cert-body">
+                        <div class="cert-issuer">HackTheBox (HTB)</div>
+                        <h3 class="cert-name">Top Learner</h3>
+                        <p class="cert-desc">Recognized as a <strong>Top Learner</strong> on HackTheBox — the industry-leading offensive security training platform. Completed advanced machines, pro labs, and challenges spanning web, network, active directory, and forensics tracks.</p>
+                        <span class="cert-status top-learner">⭐ Top Learner</span>
+                    </div>
+                </div>
+
+                <!-- INSA -->
+                <div class="cert-card card">
+                    <div class="cert-badge insa-badge">
+                        <span class="cert-badge-icon">🏛</span>
+                    </div>
+                    <div class="cert-body">
+                        <div class="cert-issuer">INSA — Ethiopia</div>
+                        <h3 class="cert-name">2 Years Professional Experience</h3>
+                        <p class="cert-desc">Two years of professional service at <strong>INSA (Information and Network Security Administration)</strong> — Ethiopia's national cybersecurity authority. Hands-on experience defending critical national infrastructure.</p>
+                        <span class="cert-status government">🇪🇹 Government Agency</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════
+             PROJECTS
+        ════════════════════════════════════════ -->
+        <section id="projects" class="section projects-section">
+            <div class="section-header">
+                <span class="section-num">05</span>
+                <h2 class="section-title">Operations & Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card card">
+                    <div class="project-card-top">
+                        <span class="project-type red-team">Red Team</span>
+                        <span class="project-index">OP-01</span>
+                    </div>
+                    <h3>National Infrastructure Pentest — INSA</h3>
+                    <p>Conducted authorized penetration tests on government and enterprise networks as part of INSA operations. Identified critical misconfigurations in Active Directory, network segmentation, and authentication systems — providing full remediation roadmaps.</p>
+                    <div class="project-findings">
+                        <div class="finding"><span class="finding-num critical">4</span><span>Critical</span></div>
+                        <div class="finding"><span class="finding-num high">9</span><span>High</span></div>
+                        <div class="finding"><span class="finding-num medium">15</span><span>Medium</span></div>
+                    </div>
+                    <div class="tags"><span>INSA</span><span>Active Directory</span><span>Network Pentest</span><span>BloodHound</span></div>
+                </div>
+
+                <div class="project-card card">
+                    <div class="project-card-top">
+                        <span class="project-type web">Bug Bounty</span>
+                        <span class="project-index">OP-02</span>
+                    </div>
+                    <h3>Critical Web App Vulnerabilities — Bug Bounty</h3>
+                    <p>Discovered and responsibly disclosed multiple critical vulnerabilities across several Bug Bounty programs. Findings included SQL Injection, Stored XSS, IDOR leading to mass PII exposure, and broken authentication flaws — recognized by program owners with Hall of Fame acknowledgments.</p>
+                    <div class="project-findings">
+                        <div class="finding"><span class="finding-num critical">3</span><span>Critical</span></div>
+                        <div class="finding"><span class="finding-num high">6</span><span>High</span></div>
+                        <div class="finding"><span class="finding-num medium">10</span><span>Medium</span></div>
+                    </div>
+                    <div class="tags"><span>Bug Bounty</span><span>SQLi</span><span>XSS</span><span>IDOR</span><span>OWASP Top 10</span></div>
+                </div>
+
+                <div class="project-card card">
+                    <div class="project-card-top">
+                        <span class="project-type osint">OSINT</span>
+                        <span class="project-index">OP-03</span>
+                    </div>
+                    <h3>Corporate OSINT Threat Intelligence Report</h3>
+                    <p>Performed a comprehensive OSINT investigation for a corporate client to assess their external digital footprint and exposure. Mapped shadow IT assets, exposed credentials, employee data, and potential attack vectors — delivering an executive-level threat intelligence report.</p>
+                    <div class="project-findings">
+                        <div class="finding"><span class="finding-num high">12</span><span>Exposed Assets</span></div>
+                        <div class="finding"><span class="finding-num critical">5</span><span>Leaked Creds</span></div>
+                    </div>
+                    <div class="tags"><span>EC-Council OSINT</span><span>Maltego</span><span>Shodan</span><span>theHarvester</span></div>
+                </div>
+
+                <div class="project-card card">
+                    <div class="project-card-top">
+                        <span class="project-type forensics">Freelance</span>
+                        <span class="project-index">OP-04</span>
+                    </div>
+                    <h3>Security Audit & Hardening — Freelance Client</h3>
+                    <p>Delivered end-to-end security assessment for a mid-size company as a freelance consultant. Covered web application testing, internal network assessment, employee phishing simulation, and produced a prioritized remediation roadmap with executive summary.</p>
+                    <div class="project-findings">
+                        <div class="finding"><span class="finding-num critical">2</span><span>Critical</span></div>
+                        <div class="finding"><span class="finding-num high">8</span><span>High</span></div>
+                        <div class="finding"><span class="finding-num medium">14</span><span>Medium</span></div>
+                    </div>
+                    <div class="tags"><span>Freelance</span><span>Full Audit</span><span>Phishing Sim</span><span>Hardening</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════
+             CONTACT
+        ════════════════════════════════════════ -->
+        <section id="contact" class="section contact-section">
+            <div class="section-header">
+                <span class="section-num">06</span>
+                <h2 class="section-title">Secure Comms</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info card">
+                    <div class="card-header-label">// Direct Channel</div>
+                    <h3>Let's Connect</h3>
+                    <p>Available for security engagements, consulting, bug bounty collaborations, and full-time opportunities. Serving clients globally from Ethiopia.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon-wrap">✉</div>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <a href="mailto:alemayew1202@gmail.com" class="contact-value">alemayew1202@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon-wrap">📱</div>
+                            <div>
+                                <div class="contact-label">Phone</div>
+                                <a href="tel:+251949337089" class="contact-value">+251 949 337 089</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon-wrap">📍</div>
+                            <div>
+                                <div class="contact-label">Location</div>
+                                <span class="contact-value">Addis Ababa, Ethiopia</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon-wrap">🎯</div>
+                            <div>
+                                <div class="contact-label">TryHackMe</div>
+                                <a href="https://tryhackme.com/p/Alualex" target="_blank" class="contact-value">@Alualex · Top #4 Ethiopia</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card card">
+                    <div class="card-header-label">// Send Message</div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">Name</label>
+                                <input type="text" id="fname" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="femail">Email</label>
+                                <input type="email" id="femail" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="fsubject">Subject</label>
+                            <input type="text" id="fsubject" placeholder="Security audit, bug bounty, consultation...">
+                        </div>
+                        <div class="form-group">
+                            <label for="fmessage">Message</label>
+                            <textarea id="fmessage" rows="5" placeholder="Describe your security needs..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full" id="submit-btn">
+                            <span>Transmit Message</span>
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">AM<span>.</span></div>
+            <p class="footer-copy">© 2026 Alemayehu Mekonen · Cyber Security Analyst · Addis Ababa, Ethiopia</p>
+            <div class="footer-links">
+                <a href="https://tryhackme.com/p/Alualex" target="_blank">TryHackMe</a>
+                <span>·</span>
+                <a href="https://app.hackthebox.com" target="_blank">HackTheBox</a>
+                <span>·</span>
+                <a href="mailto:alemayew1202@gmail.com">Email</a>
+            </div>
+            <p class="footer-quote">"The quieter you become, the more you are able to hear."</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

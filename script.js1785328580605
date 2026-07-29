@@ -1,0 +1,85 @@
+// Terminal Typing Effect
+const textToType = `Initializing system scan...
+[+] Analyzing target profile...
+[+] Role: Cyber Security Analyst
+[+] Specialization: Penetration Testing & Vulnerability Analysis
+[+] Status: Ready for Engagement
+
+> Access Granted. Welcome to the mainframe.`;
+
+const typingOutput = document.getElementById('typing-output');
+const nextCommand = document.getElementById('next-command');
+let i = 0;
+
+function typeWriter() {
+    if (i < textToType.length) {
+        typingOutput.textContent += textToType.charAt(i);
+        i++;
+        setTimeout(typeWriter, 25); // Typing speed
+    } else {
+        setTimeout(() => {
+            nextCommand.classList.remove('hide-initially');
+        }, 500);
+    }
+}
+
+// Start typing effect and matrix background on load
+window.onload = () => {
+    setTimeout(typeWriter, 800);
+    initMatrix();
+};
+
+// Matrix Background Effect
+function initMatrix() {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    const matrixBg = document.getElementById('matrix-bg');
+    
+    matrixBg.appendChild(canvas);
+    
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレゲゼデベペオォコソトノホモヨョロゴゾドボポヴッン';
+    const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const nums = '0123456789';
+    const special = '@#$%&*+<>';
+    
+    const alphabet = katakana + latin + nums + special;
+    
+    const fontSize = 16;
+    const columns = canvas.width / fontSize;
+    
+    const rainDrops = [];
+    
+    for (let x = 0; x < columns; x++) {
+        rainDrops[x] = 1;
+    }
+    
+    const draw = () => {
+        ctx.fillStyle = 'rgba(5, 5, 5, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        ctx.fillStyle = '#00ff41'; // Hacker Green
+        ctx.font = fontSize + 'px monospace';
+        
+        for (let i = 0; i < rainDrops.length; i++) {
+            const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+            ctx.fillText(text, i * fontSize, rainDrops[i] * fontSize);
+            
+            // Randomly reset raindrops to top
+            if (rainDrops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                rainDrops[i] = 0;
+            }
+            rainDrops[i]++;
+        }
+    };
+    
+    setInterval(draw, 33);
+    
+    // Handle Resize
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+}
